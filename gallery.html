@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shen's Gallery</title>
+	<meta charset="utf-8">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="icon" href="images/favicon.ico" mce_href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" mce_href="images/favicon.ico" type="image/x-icon">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="theme-color" content="#2196f3">
+
+</head>
+
+<body style="background-color: #f5f5f5">
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper blue">
+				<!-- <a href="#" class="brand-logo mid" style="padding-left: 1.2cm">Gallery</a> -->
+				<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+				<ul class="right">
+					<li><a href="#">全部</a></li>
+					<li><a href="#">学校</a></li>
+					<li><a href="#">见闻录</a></li>
+					<li><a href="#">动物</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="container" >
+		<ul id="slide-out" class="side-nav">
+			<li>
+				<div class="user-view">
+					<div class="background">
+						<img src="images/newnavbg.png">
+					</div>
+					<a href="#!user"><img class="circle" src="images/avatar1.jpeg"></a>
+					<a href="#!name"><span class="white-text name">申源春</span></a>
+					<ul class="collapsible "  data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header white-text" style="padding-left: 0vh">immr.shen@hotmail.com
+								<span style="padding-right: 0vh">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼</span>
+							</div>
+      						<div class="collapsible-body white-text" style="background-color: transparent;">
+
+      							<a href="mailto:immr.shen@hotmail.com" data-activates='dropdown1' style="color: white">Mail to me</a>
+      						</div>
+      						<div class="collapsible-body white-text" style="background-color: transparent;">
+      							<a href="https://telegram.me/happen2me" data-activates='dropdown1' style="color: white">Telegram me</a>
+      						</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.html"><i class="material-icons sidebar-material-icons">home</i>主页</a>
+			</li>
+			<li>
+				<a href="timeline.html"><i class="material-icons sidebar-material-icons">timeline</i>时间线</a>
+			</li>
+			<li>
+				<a href="gallery.html"><i class="material-icons sidebar-material-icons">filter_hdr</i>照片墙</a>
+			</li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Info</a></li>
+			<li>
+				<a href="about.html"><i class="material-icons sidebar-material-icons">info</i>关于</a>
+			</li>
+		</ul>
+		
+		<div id="carousel_button" class="fixed-action-btn">
+			<a class="btn-floating btn-large waves-effect waves-light red" onclick="showAndHide()">
+				<i class="large material-icons"><span id="button_text">view_carousel</span></i>
+			</a>
+		</div>
+		<div id="grid_button" class="fixed-action-btn" style="display: none">
+			<a class="btn-floating btn-large waves-effect waves-light red" onclick="showAndHide()">
+				<i class="large material-icons"><span id="button_text">view_module</span></i>
+			</a>
+		</div>
+
+		
+		<div id="grid_view" class="row" >
+			<div class="col s12">
+				<div class="card horizontal">
+					<div class="card-image">
+						<img src="images/head_image.jpg">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<h3>我的照片选集</h3>
+							<p style="color: gray">其实都是平常xjb拍的</p>
+						</div>
+						<!-- <div class="card-action">
+							<a href="#">This is a link</a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div id="column1" class="col s12 m6">
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/helicopter.jpg">
+						<span class="card-title">Helicopter</span>
+					</div>
+					<!-- <div class="card-content">
+						<p>para</p>
+					</div> -->
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/plus_one_s.jpg">
+						<span class="card-title">+1s</span>
+					</div>
+					<!-- <div class="card-content">
+						<p>+1s</p>
+					</div> -->
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/little_monk.jpg">
+						<span class="card-title">小和尚</span>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image">
+						<img src="images/MtQC.jpg">
+						<span class="card-title">青城山</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/white_factory.jpg">
+						<span class="card-title">校内神秘工厂</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/yuanmingyuan.jpg">
+						<span class="card-title">圆明园</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/dog2.jpg">
+						<span class="card-title"></span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/donghu.jpg">
+						<span class="card-title">东湖公园</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/south_lake.jpg">
+						<span class="card-title">南湖</span>
+					</div>
+				</div>
+			</div>
+			<div id="column2" class="col s12 m6">
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/ifs.jpg">
+						<span class="card-title">IFS</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/small_path.jpg">
+						<span class="card-title"></span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/sky.jpg">
+						<span class="card-title"></span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/museum.jpg">
+						<span class="card-title">博物馆</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/ferris.jpg">
+						<span class="card-title">骨架</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/neko2.jpg">
+						<span class="card-title">neko</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/dog1.jpg">
+						<span class="card-title"></span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/j3.jpg">
+						<span class="card-title">J3</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-image">
+						<img class="materialboxed" src="images/jiaotong_university.jpg">
+						<span class="card-title">西南交大</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="carousel_view" class="valign" style="height:100vh;">
+		<div class="carousel carousel-slider" style="position: relative;top: 50%; transform: translateY(-50%)">
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/head_image.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/ifs.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/neko1.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/MtQC.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/bird.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/ferris.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/museum.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/dog2.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/neko2.jpg"></a>
+			<a class="carousel-item waves-effect waves-light" href="#one!"><img src="images/little_monk.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/plus_one_s.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/jiaotong_university.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/donghu.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/summer+palace.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/yuanmingyuan.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/small_path.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/white_factory.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/helicopter.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/sky.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/j3.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/dog1.jpg"></a>
+			<a class="carousel-item" href="#one!"><img src="images/south_lake.jpg"></a>
+		</div>		
+	</div>
+
+
+
+	<footer class="page-footer blue">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">申源春的个人主页</h5>
+					<p class="grey-text text-lighten-4">
+					<a href="about.html" class="white-text">关于</a>
+					<br/><br/>
+					<a href="https://telegram.me/happen2me" class="white-text">联系</a>
+					</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Follow</h5>
+					<ul>
+
+						<li>
+							<a href="https://twitter.com/immrshen?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="zh-cn" data-show-count="false">Follow @immrshen</a>
+						</li>
+						<li>
+							<a class="github-button" href="https://github.com/happen2me" aria-label="Follow @happen2me on GitHub">Follow @happen2me</a>
+						</li>
+						<li>
+							<div class="fb-follow" data-href="https://www.facebook.com/immrshen" data-layout="button_count" data-size="large" data-show-faces="true"></div>
+						</li>
+						<li><g:plusone size="tall"></g:plusone></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Made by Yuanchun Shen
+			</div>
+		</div>
+	</footer>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript">
+		 // Initialize collapse button
+		  $(".button-collapse").sideNav();
+		  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+		  //$('.collapsible').collapsible();
+	</script>
+	<script type="text/javascript">
+		$('.button-collapse').sideNav({
+			menuWidth: 300, // Default is 300
+			edge: 'left', // Choose the horizontal origin
+			closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+			draggable: true, // Choose whether you can drag to open on touch screens,
+			onOpen: function(el) { /* Do Stuff*/ }, 
+			onClose: function(el) { /* Do Stuff*/ }, 
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		});
+		$('.carousel.carousel-slider').carousel({fullWidth: true});
+	</script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<!--footer js start-->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.10';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<!--footer js end-->
+	<!--sidebar js start-->
+	<script type="text/javascript">
+		$('.dropdown-button').dropdown({
+			inDuration: 300,
+			outDuration: 225,
+			constrainWidth: false, // Does not change width of dropdown to that of the activator
+			hover: true, // Activate on hover
+			gutter: 0, // Spacing from edge
+			belowOrigin: false, // Displays dropdown below the button
+			alignment: 'left', // Displays dropdown with edge aligned to the left of button
+			stopPropagation: false // Stops event propagation
+		}
+		);
+	</script>
+	<!--sidebar js end-->
+</body>
+</html>
